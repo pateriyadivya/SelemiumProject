@@ -27,3 +27,9 @@ class TestDataLoad: # Must start with Test
     def test_checkdataLoad(self, dataLoad): # Arg as the fixture name
         print(dataLoad)
         print(dataLoad[0])
+
+# Testing the cross browser fixture
+def test_crossBrowser(crossBrowser):
+    print(crossBrowser)
+    #print(crossBrowser[1]) will mean first element in the tuple if we are sending
+    # multiple data in one go

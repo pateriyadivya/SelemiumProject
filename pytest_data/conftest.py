@@ -17,3 +17,18 @@ def scope(): # Need not to have test_ coz its not a TC
 def dataLoad():
     print("We'll be sending out data to whoever asked for it")
     return ["Divya", "Pateriya", "Divyapateriya"] # Include data in the list
+
+
+# Parametrizating test with multiple data sets
+
+# Fixture will be executed once with chrome output, then with firefox, this data
+# will be send into request and will be returned to the calling function
+@pytest.fixture(params=["chrome","firefox", "edge"])
+
+def crossBrowser(request):
+    return request.param
+
+# If multiple values needs to be sent in one go then
+# @pytest.fixture(params=[("chrome","Divya"),"firefox", "edge"])
+# Now chrome, Divya both will be provided in the one go to the function which called
+
