@@ -12,3 +12,4 @@ f. //tagname = XPATH
 g. tagename == CSS
 h. a[class*='primary'] == CSS with no full name of class needed
 i. input[value='submit'] == CSS with value attribute
+console.log($('label').text());
