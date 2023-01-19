@@ -9,3 +9,4 @@ This file includes all that needs to be known for py
 6. Test cases can be marked (tag) with certain name and run as >>py.test -m <Mark> -v -s (see test_2.py)
 7. Test cases with "skip" mark are skipped when executing all in one go
 8. Mark "xfail" to run the TC but not display PASS/FAIL in O/P
+9. To execute the script and generate html reports, use >> py.test --html=report.html ---> report.html is the name of file to be generated
