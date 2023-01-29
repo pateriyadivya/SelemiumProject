@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/assets/style.css
+/pytest_data/assets/style.css
+/pytest_data/reportlog.html
