@@ -5,7 +5,7 @@ def test_loggingDemo():
 
 # create an object out of logging class that will be used for logs
 
-    logger = logging.getLogger(__name__) # __name__ arg will catch the file name and print
+    logger = logging.getLogger(__name__) # __name__ arg will catch the file name and print in log file
 
     # Let's collect the info on the file name
     fileHandler = logging.FileHandler('logfile1.log') # file object assigned to 'file'
