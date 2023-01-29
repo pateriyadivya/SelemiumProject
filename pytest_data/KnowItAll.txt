@@ -1,6 +1,6 @@
-This file includes all that needs to be known for py
+This file includes all that needs to be known for pytest
 
-=================== ALL ABOUT RUN=============================
+=================== ALL ABOUT PYTEST =============================
 1. All tests from terminal are run as >>py.test (In the project folder)
 2. To get more info out of terminal run >>py.test -v (verbose, to get detailed info on the process)
 3. To see the console logs on terminal >>py.test -v -s
@@ -10,3 +10,6 @@ This file includes all that needs to be known for py
 7. Test cases with "skip" mark are skipped when executing all in one go
 8. Mark "xfail" to run the TC but not display PASS/FAIL in O/P
 9. To execute the script and generate html reports, use >> py.test --html=report.html ---> report.html is the name of file to be generated
+10. conftest.py is a file that contains code to be executed before and post run
+11. To learn how to create a log file after execution, set the logging levels, refer test_logging.py
+12. 
