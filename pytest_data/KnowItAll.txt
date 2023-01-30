@@ -12,4 +12,6 @@ This file includes all that needs to be known for pytest
 9. To execute the script and generate html reports, use >> py.test --html=report.html ---> report.html is the name of file to be generated
 10. conftest.py is a file that contains code to be executed before and post run
 11. To learn how to create a log file after execution, set the logging levels, refer test_logging.py
-12. 
+
+
+========== Building selenium tests in pytest standard ===============
