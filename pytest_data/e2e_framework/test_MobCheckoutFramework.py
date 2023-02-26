@@ -2,14 +2,12 @@
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
-
 import time
 import pytest
 
 @pytest.mark.usefixture("setup") # Calling setup fixture which has to initialize the chrome object
-
 class TestMobileCheckout: # Class name must start with Test
-    def test_e2e(self, setup): # All the code must be wrapped in function for the framework, self is mandatory arg in class' method
+    def test_e2e(self,setup): # All the code must be wrapped in function for the framework, self is mandatory arg in class' method
 
         # In class to refer its object, self is mandatory to use
         self.driver.get("https://rahulshettyacademy.com/angularpractice/") 

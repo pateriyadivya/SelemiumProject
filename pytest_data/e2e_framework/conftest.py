@@ -17,7 +17,7 @@ def setup(request): # Using request arg allow us to send driver as an object to 
     driver = webdriver.Chrome(service=service_obj)
 
     driver.implicitly_wait(5)
-    request.cls.driver = driver # sending driver object to a class with driver being an instance as a request
+    request.cls.driver = driver # sending driver object to a class which calls the fixture
 
     yield
     driver.close()
